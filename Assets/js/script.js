@@ -6,9 +6,6 @@ var saveButton = $('.saveBtn');
 
 $(function () {
 
-  var today = dayjs();
-  $('#currentDay').text(today.format('MMM D, YYYY'));
-
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -16,7 +13,15 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   saveButton.on('click', function () {
+    var formInput = $(this).siblings('#form-input').value;
+    var hourSlot = $(this).parent().data('hour');
+    localStorage.setItem(hourSlot, formInput);
 
+    var x = [9,10,11];
+    for (var i = 0; i < x.length; i++) {
+      var hourSlot = localstorage.getItem(x[i]);
+      $('#form-input' + x[i]).val(hourSlot);
+    };
   });
   //
   // TODO: Add code to apply the past, present, or future class to each time
@@ -28,6 +33,9 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
+ 
   //
   // TODO: Add code to display the current date in the header of the page.
+  var today = dayjs();
+  $('#currentDay').text(today.format('MMM D, YYYY'));
 });
