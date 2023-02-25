@@ -4,7 +4,7 @@
 
 // display the current date in the header of the page.
 var today = dayjs();
-$('#currentDay').text(today.format('MMM D, YYYY'));
+$('#currentDay').text(today.format('ddd MMM D, YYYY'));
 
 $(function () {
 
@@ -16,15 +16,25 @@ $(function () {
   // useful when saving the description in local storage?
 
   //*WORK IN PROGRESS* save function 
-  // $(".saveBtn").on('click', function () {
-  // // gets hour and input data  
-  //   var formInput = $(this).siblings(".description").val;
-  //   var hourSlot = $(this).parent().attr("id");
-  // // save to local storage  
-  //   localStorage.setItem(hourSlot, formInput);
-  // // retrieve from local storage  
-  // $(formInput).val(localStorage.getItem("hour-9"));
-  //   });
+  $(".saveBtn").on('click', function () {
+  // gets hour and input data  
+    var formInput = $(this).siblings(".description").val();
+    var hourSlot = $(this).parent().attr("id");
+  // save to local storage  
+    localStorage.setItem(hourSlot, formInput);
+  });
+  // retrieve from local storage  
+  $("#hour-9 .description").val(localStorage.getItem("hour-9"));
+  $("#hour-10 .description").val(localStorage.getItem("hour-10"));
+  $("#hour-11 .description").val(localStorage.getItem("hour-11"));
+  $("#hour-12 .description").val(localStorage.getItem("hour-12"));
+  $("#hour1 .description").val(localStorage.getItem("hour1"));
+  $("#hour2 .description").val(localStorage.getItem("hour2"));
+  $("#hour3 .description").val(localStorage.getItem("hour3"));
+  $("#hour4 .description").val(localStorage.getItem("hour4"));
+  $("#hour5 .description").val(localStorage.getItem("hour5"));
+
+    
  
   //
   //  loop to get color coded time blocks
