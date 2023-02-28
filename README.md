@@ -17,6 +17,11 @@ Click in the time block and type in your task. Click the save button to the righ
 
  https://kaylanorris.github.io/work-scheduler/
 
+ ## Credits
+
+Starter Code provided by: https://github.com/coding-boot-camp/crispy-octo-meme
+
+
 ## License
 
 Please refer to the license in the REPO.
