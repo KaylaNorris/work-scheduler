@@ -12,7 +12,7 @@ N/A
 Click in the time block and type in your task. Click the save button to the right to save the task. The time blocks are color coded to show past, present, and future. Past will be gray, present will be red, and future will be green. You are able to change the tasks as many times as you want, just remember to click the save button!
 
 
-![Screenshot 1](assets/images/work-scheduler-screenshot.png)
+![Screenshot 1](Assets/images/work-scheduler-screenshot.png)
 
 
  https://kaylanorris.github.io/work-scheduler/
