@@ -22,17 +22,19 @@ $(function () {
     var hourSlot = $(this).parent().attr("id");
   // save to local storage  
     localStorage.setItem(hourSlot, formInput);
+
+
   });
   // retrieve from local storage  
   $("#hour-9 .description").val(localStorage.getItem("hour-9"));
   $("#hour-10 .description").val(localStorage.getItem("hour-10"));
   $("#hour-11 .description").val(localStorage.getItem("hour-11"));
   $("#hour-12 .description").val(localStorage.getItem("hour-12"));
-  $("#hour1 .description").val(localStorage.getItem("hour1"));
-  $("#hour2 .description").val(localStorage.getItem("hour2"));
-  $("#hour3 .description").val(localStorage.getItem("hour3"));
-  $("#hour4 .description").val(localStorage.getItem("hour4"));
-  $("#hour5 .description").val(localStorage.getItem("hour5"));
+  $("#hour13 .description").val(localStorage.getItem("hour13"));
+  $("#hour14 .description").val(localStorage.getItem("hour14"));
+  $("#hour15 .description").val(localStorage.getItem("hour15"));
+  $("#hour16 .description").val(localStorage.getItem("hour16"));
+  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
     
  
